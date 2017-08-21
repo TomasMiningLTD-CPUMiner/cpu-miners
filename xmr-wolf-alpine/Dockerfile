@@ -21,7 +21,7 @@ RUN set -x \
  && git clone https://github.com/wolf9466/cpuminer-multi.git /tmp/cpuminer \
  && cd /tmp/cpuminer \
  && ./autogen.sh \
- && ./configure CFLAGS="-O2 -march=native" --with-crypto --with-curl \
+ && ./configure CFLAGS="-march=native" \
  && make install \
     # Install dumb-init (avoid PID 1 issues).
     # https://github.com/Yelp/dumb-init
