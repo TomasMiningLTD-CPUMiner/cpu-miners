@@ -1,4 +1,4 @@
-M debian:jessie-slim
+FROM debian:jessie-slim
 
 RUN set -x \
     # Runtime dependencies.
